@@ -1,0 +1,3 @@
+[submodule "JavaFX"]
+	path = JavaFX
+	url = https://github.com/ArykLAnderson/JavaFX
