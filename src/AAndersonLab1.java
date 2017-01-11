@@ -94,7 +94,7 @@ public class AAndersonLab1 extends Application implements ChangeListener<String>
         final Text text = new Text(s);
         Scene goo = new Scene(new Group(text));
         text.applyCss();
-        return text.getLayoutBounds().getWidth();
+        return text.getLayoutBounds().getWidth() + 5;
     }
 
     @Override
