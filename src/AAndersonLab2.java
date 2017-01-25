@@ -8,6 +8,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Paint;
+import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 import java.awt.geom.Point2D;
@@ -33,10 +34,12 @@ public class AAndersonLab2 extends Application {
 //        this.view = new ImageView(new Image("images/logo.png"));
 
         BorderPane root = new BorderPane();
-
-        root.set
         ScrollPane scroll = new ScrollPane();
         _tempCanvas = new Canvas(400, 400);
+        _tempCanvas.setOnMousePressed(this::mousePressed);
+        _tempCanvas.setOnMouseReleased(this::mouseReleased);
+        _tempCanvas.setOnMouseDragged(this::mouseDragged);
+
         blankCanvas(_tempCanvas);
         scroll.setContent(_tempCanvas);
         root.setCenter(scroll);
@@ -60,7 +63,8 @@ public class AAndersonLab2 extends Application {
 
     private void blankCanvas(Canvas canvas) {
         GraphicsContext context = canvas.getGraphicsContext2D();
-        context.setFill(Color.GREEN);
+        context.clearRect(0,0, canvas.getWidth(), canvas.getHeight());
+        context.setFill(Color.WHITE);
         context.fillRect(0,0, canvas.getWidth(), canvas.getHeight());
     }
 
@@ -72,20 +76,29 @@ public class AAndersonLab2 extends Application {
         //Every assignment requires an about box like this
     }
 
-    private void createEventHandlers(Node node) {
-        node.onMousePressedProperty().setValue(actionEvent -> mouseClicked());
-    }
-
-    private void mouseClicked(MouseEvent event) {
-
+    private void mousePressed(MouseEvent event) {
+        _from = new Point2D.Double(event.getX(), event.getY());
     }
 
     private void mouseDragged(MouseEvent event) {
-
+        _to = new Point2D.Double(event.getX(), event.getY());
+        blankCanvas(_tempCanvas);
+        drawLine(_tempCanvas, Color.BLACK);
     }
 
     private void mouseReleased(MouseEvent event) {
+        _to = new Point2D.Double(event.getX(), event.getY());
+    }
 
+    private void drawLine(Canvas canvas, Paint paint) {
+
+        Line line = new Line(_from.getX(), _from.getY(), _to.getX(), _to.getY());
+        line.setStrokeWidth(1.0);
+        line.setStroke(paint);
+//        GraphicsContext context = canvas.getGraphicsContext2D();
+//        context.moveTo(_from.getX(), _from.getY());
+//        context.lineTo(_to.getX(), _to.getY());
+//        context.stroke();
     }
 
 
