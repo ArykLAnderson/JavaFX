@@ -76,7 +76,15 @@ public class AAndersonLab2 extends Application {
         node.onMousePressedProperty().setValue(actionEvent -> mouseClicked());
     }
 
-    private void mouseClicked() {
+    private void mouseClicked(MouseEvent event) {
+
+    }
+
+    private void mouseDragged(MouseEvent event) {
+
+    }
+
+    private void mouseReleased(MouseEvent event) {
 
     }
 
