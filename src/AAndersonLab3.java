@@ -54,7 +54,7 @@ public class AAndersonLab3 extends Application {
         widgets.getChildren().addAll(topSegment, button, segments);
         root.setTop(buildMenus());
         root.setCenter(widgets);
-        root.setBottom(_status);
+        root.setBottom(new ToolBar(_status));
         topSegment.draw();
         root.setPrefSize(400, 500);
         primaryStage.setScene(new Scene(root));
