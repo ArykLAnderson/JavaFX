@@ -4,16 +4,12 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.Region;
 import javafx.scene.paint.Color;
-
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by aryka on 1/30/2017.
- */
 public class SevenSegment extends Region {
 
-    private int[] _displayScale = {20, 20};
+    private int[] _displayScale = {40, 40};
     private Canvas _canvas;
     private int _currentValue;
     private final int _segmentLength = 8;
@@ -21,16 +17,17 @@ public class SevenSegment extends Region {
     private final int[] _margins = {2, 2};
     private final double[] _xVerts = {0, 1, 7, 8, 7 , 1};
     private final double[] _yVerts = {0, 1, 1, 0, -1, -1};
-    private final Color _o = new Color(0.3, 1.0, 0.2, 1.0f);
-    private final Color _f = new Color(0.3, 1.0, 0.2, 0.1f);
-    private Map<SegmentType, Color[]> _map;
+    private final Color _o = new Color(0.3, 1.0, 0.2, 1.0f); //onColor
+    private final Color _f = new Color(0.3, 1.0, 0.2, 0.1f); //offColor
+    private Map<Segment, Color[]> _map;
 
 
     public SevenSegment() {
         _currentValue = 10;
         _canvas = new Canvas();
         this.getChildren().add(_canvas);
-        this.setPrefSize((_scale[0] + 2*_margins[0]) * _displayScale[0], (_scale[1] + 2*_margins[1]) * _displayScale[1]);
+        this.setPrefSize((_scale[0] + 2*_margins[0]) * _displayScale[0],
+                (_scale[1] + 2*_margins[1]) * _displayScale[1]);
         _map = this.initMap();
     }
 
@@ -41,10 +38,28 @@ public class SevenSegment extends Region {
         }
     }
 
+    public void increment() {
+        _currentValue = (_currentValue + 1) % 11;
+        draw();
+    }
+
     public void draw() {
         GraphicsContext context = _canvas.getGraphicsContext2D();
-
         context.save();
+
+        initContext(context);
+        drawSegment(context, Segment.TOP, 0, 0, true);
+        drawSegment(context, Segment.TOP_LEFT, 0, 0, false);
+        drawSegment(context, Segment.TOP_RIGHT, 1, 0, false);
+        drawSegment(context, Segment.CENTER, 0, 1, true);
+        drawSegment(context, Segment.BOTTOM_LEFT, 0, 1, false);
+        drawSegment(context, Segment.BOTTOM_RIGHT, 1, 1, false);
+        drawSegment(context, Segment.BOTTOM, 0, 2, true);
+
+        context.restore();
+    }
+
+    private void initContext(GraphicsContext context) {
         context.clearRect(0, 0, _canvas.getWidth(), _canvas.getHeight());
 
         context.setFill(Color.BLACK);
@@ -54,54 +69,17 @@ public class SevenSegment extends Region {
         double height = _canvas.getHeight() / (_scale[1] + _margins[1]);
         context.scale(width, height);
         context.translate(_margins[0], _margins[1]);
+    }
+
+    private void drawSegment(GraphicsContext context, Segment segment,
+                             int translateX, int translateY, boolean horizontal) {
         context.save();
-
-        //top segment
-        context.setFill(_map.get(SegmentType.TOP)[_currentValue]);
-        context.fillPolygon(_xVerts, _yVerts, 6);
-        context.restore();
-        context.save();
-
-        //top-left segment
-        context.setFill(_map.get(SegmentType.TOP_LEFT)[_currentValue]);
-        context.fillPolygon(_yVerts, _xVerts, 6);
-        context.restore();
-        context.save();
-
-        //top-right segment
-        context.translate(_segmentLength, 0);
-        context.setFill(_map.get(SegmentType.TOP_RIGHT)[_currentValue]);
-        context.fillPolygon(_yVerts, _xVerts, 6);
-        context.restore();
-        context.save();
-
-        //center segment
-        context.translate(0, _segmentLength);
-        context.setFill(_map.get(SegmentType.CENTER)[_currentValue]);
-        context.fillPolygon(_xVerts, _yVerts, 6);
-        context.restore();
-        context.save();
-
-        //bottom segment
-        context.translate(0, 2* _segmentLength);
-        context.setFill(_map.get(SegmentType.BOTTOM)[_currentValue]);
-        context.fillPolygon(_xVerts, _yVerts, 6);
-        context.restore();
-        context.save();
-
-        //bottom left segment
-        context.translate(0, _segmentLength);
-        context.setFill(_map.get(SegmentType.BOTTOM_LEFT)[_currentValue]);
-        context.fillPolygon(_yVerts, _xVerts, 6);
-        context.restore();
-        context.save();
-
-        //bottom right segment
-        context.translate( _segmentLength, _segmentLength);
-        context.setFill(_map.get(SegmentType.BOTTOM_RIGHT)[_currentValue]);
-        context.fillPolygon(_yVerts, _xVerts, 6);
-        context.restore();
-
+        context.translate(translateX * _segmentLength, translateY * _segmentLength);
+        context.setFill(_map.get(segment)[_currentValue]);
+        if (horizontal)
+            context.fillPolygon(_xVerts, _yVerts, 6);
+        else
+            context.fillPolygon(_yVerts, _xVerts, 6);
         context.restore();
     }
 
@@ -121,30 +99,25 @@ public class SevenSegment extends Region {
         double availHeight = this.getHeight();
         double availWidth = this.getWidth();
         double aspect = _scale[0]/_scale[1];
-
         double candidateHeight = availWidth/aspect;
         double candidateWidth = availHeight*aspect;
 
-        double heightActual= 0, widthActual = 0;
-
         if (candidateHeight > availHeight) {
-            heightActual = availHeight;
-            widthActual = candidateWidth;
+            _canvas.setHeight(availHeight);
+            _canvas.setWidth(candidateWidth);
         } else if (candidateWidth > availWidth) {
-            heightActual = candidateHeight;
-            widthActual = availWidth;
+            _canvas.setHeight(candidateHeight);
+            _canvas.setWidth(availWidth);
         }
 
-        _canvas.setWidth(widthActual);
-        _canvas.setHeight(heightActual);
-
-        this.layoutInArea(_canvas, 0, 0, this.getWidth(), this.getHeight(), 0, HPos.CENTER, VPos.CENTER);
+        this.layoutInArea(_canvas, 0, 0, this.getWidth(),
+                this.getHeight(), 0, HPos.CENTER, VPos.CENTER);
         this.draw();
     }
 
-    private Map<SegmentType, Color[]> initMap() {
+    private Map<Segment, Color[]> initMap() {
 
-        HashMap<SegmentType, Color[]> map = new HashMap<>();
+        HashMap<Segment, Color[]> map = new HashMap<>();
 
         //                    0,  1,  2,  3,  4,  5,  6,  7,  8,  9, OFF
         Color[][] colors = {{_o, _f, _o, _o, _f, _o, _o, _o, _o, _o, _f},   //TOP
@@ -155,13 +128,13 @@ public class SevenSegment extends Region {
                             {_o, _o, _f, _o, _o, _o, _o, _o, _o, _o, _f},   //BOTTOM_RIGHT
                             {_o, _f, _o, _o, _f, _o, _o, _f, _o, _f, _f}};  //BOTTOM
 
-        map.put(SegmentType.TOP, colors[0]);
-        map.put(SegmentType.TOP_LEFT, colors[1]);
-        map.put(SegmentType.TOP_RIGHT, colors[2]);
-        map.put(SegmentType.CENTER, colors[3]);
-        map.put(SegmentType.BOTTOM_LEFT, colors[4]);
-        map.put(SegmentType.BOTTOM_RIGHT, colors[5]);
-        map.put(SegmentType.BOTTOM, colors[6]);
+        map.put(Segment.TOP, colors[0]);
+        map.put(Segment.TOP_LEFT, colors[1]);
+        map.put(Segment.TOP_RIGHT, colors[2]);
+        map.put(Segment.CENTER, colors[3]);
+        map.put(Segment.BOTTOM_LEFT, colors[4]);
+        map.put(Segment.BOTTOM_RIGHT, colors[5]);
+        map.put(Segment.BOTTOM, colors[6]);
         return map;
     }
 }

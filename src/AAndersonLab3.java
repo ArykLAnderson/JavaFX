@@ -1,10 +1,26 @@
 import javafx.application.Application;
+import javafx.application.Platform;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.Menu;
+import javafx.scene.control.MenuBar;
+import javafx.scene.control.MenuItem;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyCodeCombination;
+import javafx.scene.input.KeyCombination;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.awt.*;
+
 public class AAndersonLab3 extends Application {
+
+    private Label _status;
 
     public static void main(String[] args) {
         launch(args);
@@ -13,18 +29,50 @@ public class AAndersonLab3 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("JavaFX Lab 2");
+        primaryStage.setTitle("JavaFX Lab 3");
+        createLabel();
+
         BorderPane root = new BorderPane();
-        SevenSegment topsegment = new SevenSegment(0);
+        SevenSegment topSegment = new SevenSegment(0);
+        VBox widgets = new VBox();
+        HBox segments = new HBox();
+        widgets.alignmentProperty().setValue(Pos.CENTER);
+        segments.alignmentProperty().setValue(Pos.CENTER);
+        widgets.setSpacing(5.0);
         SevenSegment bottomSegment1 = new SevenSegment(1);
         SevenSegment bottomSegment2 = new SevenSegment(2);
         SevenSegment bottomSegment3 = new SevenSegment(3);
         SevenSegment bottomSegment4 = new SevenSegment(4);
+        segments.getChildren().addAll(bottomSegment1, bottomSegment2, bottomSegment3, bottomSegment4);
+        Button button = new Button("Increment All");
+        button.setOnAction(actionEvent -> increment(topSegment,
+                                                    bottomSegment1,
+                                                    bottomSegment2,
+                                                    bottomSegment3,
+                                                    bottomSegment4));
 
-        root.setCenter(topsegment);
-        topsegment.draw();
+        widgets.getChildren().addAll(topSegment, button, segments);
+        root.setTop(buildMenus());
+        root.setCenter(widgets);
+        root.setBottom(_status);
+        topSegment.draw();
+        root.setPrefSize(400, 500);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
+    }
+
+    private void increment(SevenSegment a, SevenSegment b, SevenSegment c, SevenSegment d, SevenSegment e) {
+
+        a.increment();
+        b.increment();
+        c.increment();
+        d.increment();
+        e.increment();
+    }
+
+    private void createLabel() {
+        _status = new Label();
+        _status.setText("Everything is copacetic");
     }
 
     private void onAbout() {
@@ -37,59 +85,19 @@ public class AAndersonLab3 extends Application {
     private MenuBar buildMenus() {
 
         MenuBar menuBar = new MenuBar();
-//
-//        Menu fileMenu = new Menu("_File");
-//
-//        MenuItem quitMenuItem = new MenuItem("_Exit");
-//        quitMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.X, KeyCombination.CONTROL_DOWN));
-//        quitMenuItem.setOnAction(actionEvent -> Platform.exit());
-//
-//        MenuItem newMenuItem = new MenuItem("_New");
-//        newMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.N, KeyCombination.CONTROL_DOWN));
-//        newMenuItem.setOnAction(actionEvent -> onNew());
-//
-//        MenuItem openMenuItem = new MenuItem("_Open");
-//        openMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.O, KeyCombination.CONTROL_DOWN));
-//        openMenuItem.setOnAction(actionEvent -> onOpen());
-//
-//        MenuItem saveMenuItem = new MenuItem("_Save");
-//        saveMenuItem.setOnAction(actionEvent -> onSave());
-//        saveMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.S, KeyCombination.CONTROL_DOWN));
-//
-//        MenuItem saveAsMenuItem = new MenuItem("_Save As");
-//        saveAsMenuItem.setOnAction(actionEvent -> onSaveAs());
-//        saveAsMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.A, KeyCombination.CONTROL_DOWN));
-//
-//        fileMenu.getItems().addAll(newMenuItem,
-//                                   openMenuItem,
-//                                   saveMenuItem,
-//                                   saveAsMenuItem,
-//                                   new SeparatorMenuItem(),
-//                                   quitMenuItem);
-//
-//        String[] widthItems = {"_1 Pixel", "_4 Pixels", "_8 Pixels"};
-//        String[] colorItems = {"_Black", "_Red", "_Green", "_Blue"};
-//        Menu width = new Menu("_Width");
-//        Menu color = new Menu("_Color");
-//
-//        for (String wString : widthItems) {
-//            RadioMenuItem item = new RadioMenuItem(wString);
-//            item.setOnAction(actionEvent -> onWidth(wString));
-//            width.getItems().add(item);
-//        }
-//
-//        for (String wString : colorItems) {
-//            RadioMenuItem item = new RadioMenuItem(wString);
-//            item.setOnAction(actionEvent -> onColor(wString));
-//            color.getItems().add(item);
-//        }
-//
-//        Menu helpMenu = new Menu("_Help");
-//        MenuItem aboutMenuItem = new MenuItem("_About");
-//        aboutMenuItem.setOnAction(actionEvent -> onAbout());
-//        helpMenu.getItems().add(aboutMenuItem);
-//
-//        menuBar.getMenus().addAll(fileMenu, width, color, helpMenu);
+        Menu fileMenu = new Menu("_File");
+        MenuItem quitMenuItem = new MenuItem("_Exit");
+        quitMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.X, KeyCombination.CONTROL_DOWN));
+        quitMenuItem.setOnAction(actionEvent -> Platform.exit());
+
+        Menu aboutMenu = new Menu("_Help");
+        MenuItem aboutMenuItem = new MenuItem("_About");
+        aboutMenuItem.setOnAction(actionEvent -> onAbout());
+        aboutMenu.getItems().add(aboutMenuItem);
+
+        fileMenu.getItems().add(quitMenuItem);
+        menuBar.getMenus().addAll(fileMenu, aboutMenu);
+
         return menuBar;
     }
 }
