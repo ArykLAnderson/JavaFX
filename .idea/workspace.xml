@@ -6,10 +6,31 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/AAndersonLab2.java" line="101" />
+    <bookmark url="file://$PROJECT_DIR$/src/AAndersonLab4.java" line="129" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="17293cd1-00f8-4e17-84f1-6a18a8c67610" name="Default" comment="" />
+    <list default="true" id="17293cd1-00f8-4e17-84f1-6a18a8c67610" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/AAndersonLab2$ToolBarPos.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/Color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/Move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/New.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/Open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/Save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/Width.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/assets/arrow_move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/Color.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/Move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/New.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/Open.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/Save.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/Width.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/arrow_move.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AAndersonLab4.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AAndersonLab2.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaFXLab1/AAndersonLab2.class" afterPath="$PROJECT_DIR$/out/production/JavaFXLab1/AAndersonLab2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +45,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AAndersonLab2.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+      <file leaf-file-name="AAndersonLab4.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="-617">
+              <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+                <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -48,6 +82,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>this._status</find>
+      <find>toggleGroup</find>
     </findStrings>
     <replaceStrings>
       <replace>_status</replace>
@@ -72,6 +107,7 @@
         <option value="$PROJECT_DIR$/src/AAndersonLab0.java" />
         <option value="$PROJECT_DIR$/src/AAndersonLab1.java" />
         <option value="$PROJECT_DIR$/src/AAndersonLab2.java" />
+        <option value="$PROJECT_DIR$/src/AAndersonLab4.java" />
       </list>
     </option>
   </component>
@@ -102,9 +138,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -141,7 +177,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="out" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -160,6 +200,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aryka\IdeaProjects\JavaFX\src" />
+      <recent name="C:\Users\aryka\IdeaProjects\JavaFX\Assets" />
       <recent name="C:\Users\aryka\IdeaProjects\JavaFX\images" />
       <recent name="C:\Users\aryka\IdeaProjects\JavaFX\src\images" />
     </key>
@@ -547,7 +588,7 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="AAndersonLab2" />
+      <option name="MAIN_CLASS_NAME" value="AAndersonLab4" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -591,7 +632,8 @@
       <workItem from="1485311487371" duration="1799000" />
       <workItem from="1485313550400" duration="6760000" />
       <workItem from="1485834555989" duration="28000" />
-      <workItem from="1485905871531" duration="5000" />
+      <workItem from="1485905871531" duration="1392000" />
+      <workItem from="1485907509170" duration="4635000" />
     </task>
     <task id="LOCAL-00001" summary="Task 2 of lab finished">
       <created>1484099286744</created>
@@ -618,39 +660,39 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16320000" />
+    <option name="totallyTimeSpent" value="22342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -668,7 +710,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -677,102 +719,298 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AAndersonLab2.java">
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_111/javafx-src.zip!/javafx/scene/image/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="1109" column="0" lean-forward="false" selection-start-line="1109" selection-start-column="0" selection-end-line="1109" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/arrow_move.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Color.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Move.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/New.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Open.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Save.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/Width.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AAndersonLab4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-617">
+          <caret line="26" column="26" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#blankCanvas#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseDragged#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#mouseReleased#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#drawLine#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#buildMenus#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidthShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColorShowing#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#createToolbar#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleWidth#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onCycleColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onMove#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onColor#0;class#AAndersonLab4#0" expanded="false" />
+            <element signature="method#onWidth#0;class#AAndersonLab4#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -788,7 +1026,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
