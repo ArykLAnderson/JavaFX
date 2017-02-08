@@ -78,7 +78,7 @@ public class AAndersonLab3 extends Application {
     private void onAbout() {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("About");
-        alert.setHeaderText("Aryk L Anderson, CSCD 370 Lab 3, Spring 2016");
+        alert.setHeaderText("Aryk L Anderson, CSCD 370 Lab 3, Winter 2017");
         alert.showAndWait();
     }
 
